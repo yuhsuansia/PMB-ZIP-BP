@@ -1,7 +1,6 @@
-# PMB-BP extended-object tracking
+# Multiple extended object tracking using the PMB filter with the zero-inflated Poisson point process model
 
-MATLAB particle Poisson multi-Bernoulli (PMB) filtering with belief propagation
-(BP) data association for elliptical extended objects. Two measurement models
+MATLAB implementation of an extended object Poisson multi-Bernoulli (PMB) filter with the zero-inflated Poisson point process measurement model using particle belief propagation. Two measurement models
 are included:
 
 - **Poisson:** each object generates a Poisson measurement set every scan.
@@ -11,13 +10,12 @@ are included:
 
 The state includes 2D position/velocity, a 2-by-2 extent covariance, and a
 measurement rate. The filters use particle Bernoulli components, uniform
-spatial births, and a scalar undetected PPP intensity.
+spatial births.
 
-## Requirements
+## Paper
 
-MATLAB with Statistics and Machine Learning Toolbox. The examples use
-`tiledlayout` (MATLAB R2019b or later). Verification was performed with
-MATLAB R2026a. No parallel toolbox, external dataset, or MEX build is needed.
+1. An Extended Object PMB Filter with Zero-Inflated Poisson Model Using Belief Propagation, 2026 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI).
+2. Extended version available at https://arxiv.org/abs/2605.25316.
 
 ## Quick start
 
